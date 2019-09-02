@@ -1,4 +1,4 @@
-const YANDEX_API = '678422f3-d15f-42ae-b5aa-02f07ead8320';
+//const YANDEX_API = '678422f3-d15f-42ae-b5aa-02f07ead8320';
 
 ymaps.ready(init);
 
@@ -105,10 +105,10 @@ function init(){
     });
 }
 
-const settings = {
+/*const settings = {
   apiKey: '678422f3-d15f-42ae-b5aa-02f07ead8320',
   lang: 'ru_RU',
   coordorder: 'latlong',
   version: '2.1'
-}
+}*/
 
