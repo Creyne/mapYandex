@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>QT Project</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<678422f3-d15f-42ae-b5aa-02f07ead8320>&lang=ru_RU" type="text/javascript">
+    </script>
+    
+</head>
+<body>
+    <div id="list">
+    	<p>
+	        <input type="text" v-model="newPoint" v-on:keyup.enter="addPont"/>
+	    </p>
+	    <ul id="sortable">
+	    	<li v-for="(item, index) in points">
+			<p>{{Object.keys(item)[0]}} 
+			<button v-on:click="delPont">x</button>
+			</p>
+    	</ul>
+    </div>
+	<div id="map"></div>
+	
+
+	<script type="text/javascript" src="js/lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://unpkg.com/vue-yandex-maps"></script>
+	<script src="main.js"></script>
+</body>
+</html>
